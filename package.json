@@ -1,0 +1,19 @@
+{
+  "name": "mountainpainmanagement",
+  "version": "1.0.0",
+  "description": "Online store using Shopify, built with node, express, ejs, and mongoose",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evanejtucker/MountainPainManagement.git"
+  },
+  "author": "Evan E J Tucker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evanejtucker/MountainPainManagement/issues"
+  },
+  "homepage": "https://github.com/evanejtucker/MountainPainManagement#readme"
+}
