@@ -32,7 +32,7 @@ app.use(flash());
 app.set("view engine", "ejs");
 
 app.use("/users", usersAPI);
-app.use("/", htmlRoutes);
+app.use(htmlRoutes);
 
 // brings in mongo connection
 require("./config/connection.js");
