@@ -13,7 +13,7 @@ app.use(logger("dev"));
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
-app.use("/", htmlRoutes);
+app.use(htmlRoutes);
 
 // brings in mongo connection
 require("./config/connection.js");
