@@ -3,6 +3,7 @@ const port = process.env.PORT || 3000;
 const bodyParser = require("body-parser");
 const logger = require("morgan");
 const ejs = require("ejs");
+const htmlRoutes = require("./routes/htmlRoutes");
 
 const app = express();
 
@@ -12,9 +13,7 @@ app.use(logger("dev"));
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
-app.get("/", function (req, res, next) {
-  res.render("./pages/index", { title: "Mountain Pain Management" });
-});
+app.use("/", htmlRoutes);
 
 // brings in mongo connection
 require("./config/connection.js");
