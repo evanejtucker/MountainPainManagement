@@ -5,6 +5,7 @@ module.exports = {
     "extends": "standard",
     "rules": {
         "semi": ["error", "always"],
-        "quotes": ["error", "double"]
+        "quotes": ["error", "double"],
+        "no-unused-vars": ["error", { "vars": "local", "args": "none"}]
     }
 };
