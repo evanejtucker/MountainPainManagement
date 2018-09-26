@@ -1,7 +1,9 @@
 const mongoose = require("mongoose");
-const dbKey = process.env.mongooseURL;
+const keys = require("./keys.js");
 
-mongoose.connect(dbKey, function (error) {
+const mongoKey = process.env.mongooseURL || keys.mongooseURL;
+
+mongoose.connect(mongoKey, { useNewUrlParser: true }, function (error) {
   if (error) {
     return console.log("the connection broke");
   } else {
