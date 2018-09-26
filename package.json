@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run start\" \"npm run webhook\"",
     "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
-    "start": "npm run build && nodemon dist/server.js"
+    "start": "npm run build && nodemon dist/server.js",
+    "webhook": "ssh -R 100PercentKona:80:localhost:8080 serveo.net"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,7 @@
   "homepage": "https://github.com/evanejtucker/MountainPainManagement#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "concurrently": "^3.6.0",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "mongoose": "^5.2.17",
