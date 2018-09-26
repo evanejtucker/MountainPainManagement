@@ -10,6 +10,7 @@ var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var flash = require('connect-flash');
 
+var usersAPI = require("./routes/usersAPI");
 var htmlRoutes = require("./routes/htmlRoutes");
 
 var app = express();
@@ -30,6 +31,7 @@ app.use(passport.session());
 app.use(flash());
 app.set("view engine", "ejs");
 
+app.use("/users", usersAPI);
 app.use("/", htmlRoutes);
 
 // brings in mongo connection

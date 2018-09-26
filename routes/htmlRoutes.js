@@ -9,4 +9,8 @@ html.get("/login", function (req, res, next) {
   res.render("./pages/index", { title: "Login Page" });
 });
 
+html.get("/profile", function (req, res, next) {
+  res.render("./pages/index", { title: "Profile Page" });
+});
+
 module.exports = html;

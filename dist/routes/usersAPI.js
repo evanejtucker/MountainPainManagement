@@ -1,16 +1,18 @@
-const express = require("express");
-const users = express.Router();
-const passport = require("passport");
+"use strict";
+
+var express = require("express");
+var users = express.Router();
+var passport = require("passport");
 require("../config/passport")(passport);
 require("../models/Users");
-const auth = require("../config/middleware/isAuthenticated");
+var auth = require("../config/middleware/isAuthenticated");
 
-users.get("/profile", auth.isLoggedIn, (req, res, next) => {
+users.get("/profile", auth.isLoggedIn, function (req, res, next) {
   console.log("logged in successfully");
   res.send(req.user);
 });
 
-users.get("/logout", auth.logoutUser, (req, res, next) => {
+users.get("/logout", auth.logoutUser, function (req, res, next) {
   console.log("user logged out");
   res.redirect("/");
 });

@@ -23,12 +23,9 @@
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.3",
-<<<<<<< HEAD
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.3",
-=======
     "concurrently": "^3.6.0",
->>>>>>> d3ad39ae9e93fe1213e928c1c84f413d656dd065
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "express-session": "^1.15.6",
