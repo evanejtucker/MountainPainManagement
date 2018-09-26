@@ -4,11 +4,11 @@ var express = require("express");
 var port = process.env.PORT || 8080;
 var bodyParser = require("body-parser");
 var logger = require("morgan");
-var ejs = require("ejs");
 var passport = require("passport");
-var cookieParser = require('cookie-parser');
-var session = require('express-session');
-var flash = require('connect-flash');
+var cookieParser = require("cookie-parser");
+var session = require("express-session");
+var flash = require("connect-flash");
+require("ejs");
 
 var usersAPI = require("./routes/usersAPI");
 var htmlRoutes = require("./routes/htmlRoutes");
