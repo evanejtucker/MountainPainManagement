@@ -2,11 +2,11 @@ const express = require("express");
 const port = process.env.PORT || 8080;
 const bodyParser = require("body-parser");
 const logger = require("morgan");
-const ejs = require("ejs");
 const passport = require("passport");
-const cookieParser = require('cookie-parser');
-const session = require('express-session');
-const flash = require('connect-flash');
+const cookieParser = require("cookie-parser");
+const session = require("express-session");
+const flash = require("connect-flash");
+require("ejs");
 
 const usersAPI = require("./routes/usersAPI");
 const htmlRoutes = require("./routes/htmlRoutes");
