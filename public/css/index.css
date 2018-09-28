@@ -1,6 +1,48 @@
 body {
-  background: red;
-  color: blue;
+  background: ghostwhite;
+}
+
+#mainNav {
+  background: steelblue;
+  color: ghostwhite;
+  text-align: center;
+  box-shadow: 0 5px 5px darkgrey;
+}
+#mainNav a {
+  color: white;
+}
+#mainNav #navLinks {
+  margin-right: 20px;
+}
+#mainNav #mobileNavBrand {
+  display: none;
+}
+#mainNav .dropdown-menu {
+  background-color: transparent;
+  border: none;
+}
+#mainNav .dropdown-menu a {
+  color: black;
+  text-align: center;
+  width: 90px;
+}
+#mainNav a#navbarDropdownMenuLink {
+  width: 100px;
+}
+#mainNav .navbar-brand img {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 380px) {
+  #mainNav #mobileNavBrand {
+    display: block;
+  }
+  #mainNav #mainNavBrand {
+    display: none;
+  }
+  #mainNav a {
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
