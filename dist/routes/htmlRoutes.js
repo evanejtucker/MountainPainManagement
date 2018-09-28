@@ -4,15 +4,19 @@ var express = require("express");
 var html = express.Router();
 
 html.get("/", function (req, res, next) {
-  res.render("./pages/index", { title: "Mountain Pain Management" });
+  res.render("./pages/index", { user: req.user, title: "Mountain Pain Management" });
 });
 
 html.get("/login", function (req, res, next) {
-  res.render("./pages/index", { title: "Login Page" });
+  res.render("./pages/index", { user: req.user, title: "Login Page" });
 });
 
 html.get("/profile", function (req, res, next) {
-  res.render("./pages/index", { title: "Profile Page" });
+  res.render("./pages/index", { user: req.user, title: "Profile Page" });
+});
+
+html.get("*", function (req, res, next) {
+  res.render("./pages/index", { user: req.user, title: "404" });
 });
 
 module.exports = html;

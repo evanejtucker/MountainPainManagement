@@ -1,8 +1,69 @@
 
-$main-background: red;
-$main-text-color: blue;
+// variables
+// -------------------------------------------------------------------
+$main-background: white;
+$primary-color: steelblue;
 
+// page styles
+// -------------------------------------------------------------------
 body {
     background: $main-background;
-    color: $main-text-color;
+}
+
+// navbar styles
+// -------------------------------------------------------------------
+#mainNav {
+    background: $primary-color;
+    color: $main-background;
+    text-align: center;
+
+    a {
+        color: white;
+    }
+
+    #navLinks {
+        margin-right: 20px;
+    }
+
+    #mobileNavBrand {
+        display: none;
+    }
+
+    .dropdown-menu {
+        background-color: transparent;
+        border: none;
+    }
+
+    .dropdown-menu a  {
+        color: black;
+        text-align: center;
+        width: 90px;     
+    }
+
+    a#navbarDropdownMenuLink {
+        width: 100px;
+    }
+
+    .navbar-brand img {
+        margin-right: 10px;
+    }
+
+}
+
+
+// Media Queries
+@media only screen and (max-width: 380px) {
+    #mainNav {
+        #mobileNavBrand {
+            display: block;
+        }
+
+        #mainNavBrand {
+            display: none;
+        }
+
+        a {
+            margin: 0 auto;
+        }
+    }
 }
