@@ -1,13 +1,19 @@
 
 // variables
 // -------------------------------------------------------------------
-$main-background: white;
+$main-background: ghostwhite;
 $primary-color: steelblue;
+$primary-font: 'Ubuntu', sans-serif;
 
 // page styles
 // -------------------------------------------------------------------
 body {
     background: $main-background;
+    font-family: $primary-font;
+}
+
+#mainContainer {
+    margin-top: 30px;
 }
 
 // navbar styles
@@ -16,9 +22,10 @@ body {
     background: $primary-color;
     color: $main-background;
     text-align: center;
+    box-shadow: 0 5px 5px darkgrey;
 
     a {
-        color: white;
+        color: $main-background;
     }
 
     #navLinks {
@@ -38,6 +45,12 @@ body {
         color: black;
         text-align: center;
         width: 90px;     
+    }
+
+    .dropdown-menu a:hover  {
+        font-size: 1.3em;
+        background-color: transparent;  
+        font-weight: bold; 
     }
 
     a#navbarDropdownMenuLink {

@@ -13,7 +13,12 @@
     
     <% include ../partials/navbar %>
     <div class="container" id='mainContainer'>
-        <%= title %>  
+        <%= title %>
+        <% if (method==='login') { %>
+            <% include ../partials/login %>  
+        <% } %>
+        <% include ../partials/login %>  
+        
     </div>
    
     <% include ../partials/scripts %>

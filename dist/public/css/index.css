@@ -1,14 +1,20 @@
 body {
-  background: white;
+  background: ghostwhite;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#mainContainer {
+  margin-top: 30px;
 }
 
 #mainNav {
   background: steelblue;
-  color: white;
+  color: ghostwhite;
   text-align: center;
+  box-shadow: 0 5px 5px darkgrey;
 }
 #mainNav a {
-  color: white;
+  color: ghostwhite;
 }
 #mainNav #navLinks {
   margin-right: 20px;
@@ -24,6 +30,11 @@ body {
   color: black;
   text-align: center;
   width: 90px;
+}
+#mainNav .dropdown-menu a:hover {
+  font-size: 1.3em;
+  background-color: transparent;
+  font-weight: bold;
 }
 #mainNav a#navbarDropdownMenuLink {
   width: 100px;

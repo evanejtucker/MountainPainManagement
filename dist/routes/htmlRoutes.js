@@ -8,7 +8,11 @@ html.get("/", function (req, res, next) {
 });
 
 html.get("/login", function (req, res, next) {
-  res.render("./pages/index", { user: req.user, title: "Login Page" });
+  res.render("./pages/auth", { user: req.user, title: "Login Page", method: "login" });
+});
+
+html.get("/signup", function (req, res, next) {
+  res.render("./pages/auth", { user: req.user, title: "Signup Page", method: "signup" });
 });
 
 html.get("/profile", function (req, res, next) {
