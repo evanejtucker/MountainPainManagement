@@ -17,7 +17,10 @@
         <% if (method==='login') { %>
             <% include ../partials/login %>  
         <% } %>
-        <% include ../partials/login %>  
+
+        <% if (method==='signup') { %>
+            <% include ../partials/signup %>  
+        <% } %>
         
     </div>
    
