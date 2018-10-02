@@ -7,9 +7,16 @@ $primary-font: 'Ubuntu', sans-serif;
 
 // page styles
 // -------------------------------------------------------------------
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     background: $main-background;
     font-family: $primary-font;
+    margin-bottom: 50px;
 }
 
 #mainContainer {
