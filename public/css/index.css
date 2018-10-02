@@ -1,6 +1,12 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   background: ghostwhite;
   font-family: "Ubuntu", sans-serif;
+  margin-bottom: 50px;
 }
 
 #mainContainer {
@@ -17,6 +23,7 @@ footer {
   text-align: center;
   color: white;
 }
+
 
 #mainNav {
   background: steelblue;
